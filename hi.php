@@ -6,8 +6,8 @@
 		$message = htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8');
 		$human = intval($_POST['human']);
 		$from = 'Contact Form';
-		$to = 'Service provider's email';
-		$subject = 'What appears at service provider's inbox when somenone uses the form';
+		$to = 'Service providersemail';
+		$subject = 'What appears at service provider inbox when somenone uses the form';
 
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
 		// Check if name has been entered

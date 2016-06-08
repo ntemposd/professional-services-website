@@ -1,4 +1,3 @@
-<!--- contact form -->
 <?php
 	if (isset($_POST["submit"])) {
 		$name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');

@@ -6,7 +6,7 @@ Download all files, change the sample content, add images to fit your case and u
 - SEO Placeholders
 - Google Analytics (add your tracking ID inside the ga script at head)
 - PHP Contact Form 
-- Map
+- Built-in Map
 
 
 ## How to

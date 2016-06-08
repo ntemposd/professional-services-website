@@ -173,7 +173,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	</div>
 </div>
 <div class="pad"></div>
-<<footer class="footer">
+<footer class="footer">
 	<ul>
 		<li><a href="mailto:"provider email"?"><img src="m.png" alt="m"></a></li>
 		<li><a href="provider linkedin profile link"><img src="l.png" alt="l"></a></li>

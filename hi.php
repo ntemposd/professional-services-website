@@ -5,7 +5,7 @@
 		$message = htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8');
 		$human = intval($_POST['human']);
 		$from = 'Contact Form';
-		$to = 'Service providersemail';
+		$to = 'Service providers email';
 		$subject = 'What appears at service provider inbox when somenone uses the form';
 
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";

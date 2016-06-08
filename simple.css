@@ -1,17 +1,12 @@
 html,body {
 	height: 100%;
-	font-family: "Trebuchet MS", Arial, Tahoma;
-	padding-bottom: 40px !important;
-	background: url(back.png) no-repeat center center fixed; 
+	font-family: 'Ubuntu Condensed', Arial, Tahoma;
+	font-size: 16px;
 	color: black;
-	margin-bottom: 0px !important;
-}	
-
-ul,li {
-	margin-left: 0px !important;
-	padding-left: 0px !important;
-	display: inline;
-	color: #ffffff;
+	background: "url";
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-position: bottom right;
 }
 
 a{
@@ -19,121 +14,144 @@ a{
 	text-decoration: none !important;
 }
 
-a:hover {
-    color: red;
-}
-
-a.land{
-	color: red;
-}
-
-a.land:hover{
-	color: #000000;
-}
-
-.form-control{
-	width: 80%;
-}
-
-.btn-primary{
-	background: black;
-}
-
-.btn-primary:hover{
-	background: #660198;
-}
-
+/*navigation-bar*/
 .navbar{
 	border-radius:0px !important;
-	border: 0px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #FFA500;
 	background-color: black;
+	background: -webkit-linear-gradient(#4B4646, black); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#4B4646, black); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#4B4646, black); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#4B4646, black); /* Standard syntax (must be last) */
+	filter:contrast(200%);
 	color: white;
-	opacity: 70%;
+	opacity: 0.6;
 }
 
-.navbar-default .navbar-nav>li>a {
-	color: white;
+.navbar>li {
+	left: 0px !important;
+	display: inline;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-	color: red;
+	color: #FFA500;
 }
+/*end of navigation-bar*/
 
-.big{
-	font-size: medium;
+/*index.html*/
+h5:before{
+	content: "\e080";
+	font-family: 'Glyphicons Halflings';
+	margin-top: 20px;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+	color: #FFA500;
 }
+/*end of index.html*/
 
-#map-outer{
-		height: 80%;
-		padding: 10px;
-		border: 2px solid #CCC; 
-		background-color:#FFF;
-}
-
-#map-container{
-		height: 420px;
-}
-
-@media all and (max-width: 991px) {
-		#map-outer{
-			height: 650px;
-		}
-}
-
-.pad{
+/*footer*/
+.pad {
 	padding-bottom: 60px !important;
 }
 
-a.click{
-	display: block;
-}
-
-#accordion{
-	background-color: #ffffff;
-}
-
 .footer {
+	padding-top: 5px;
 	position: fixed;
 	z-index: +1;
 	bottom: 0;
 	width: 100%;
-	border-top: 1px solid black;
 	height: 40px;
-	margin-top: 1px !important;
+	border-top: 1px solid #FFA500;
+	border-bottom: 0px;
 	background-color: black;
-	opacity: 100%;
-	text-align: left;
+	font-weight: 100 !important;
+	font-size: small;
+	opacity: 0.6;
 }
 
-@media (max-width:320px){
-.footer {
-	opacity: 0.95;
-	text-align: center;
-}	
+.footer> ul, li {
+	display: inline !important;
 }
 
-@media (max-width: 481px){
-.footer {
-	opacity: 0.95;
-	text-align: center;
+#copy {
+	display: inline;
+	position: fixed;
+	right: 10px;
+	padding-top: 5px;
+	color: green !important;
+}
+
+#copy> a {
+	color: green;
+}
+/*end of footer*/
+
+
+/*services.html*/
+#accordion {
+	background-color: #ffffff;
+	border: 0px;
+	padding-bottom: 40px !important;
+}
+
+a.click {
+	display: block;
+	color: #FFA500;
+}
+
+.media-heading {
+	display: inline-block !important;
+}
+
+ul#service li {
+	list-style-type: circle !important;
+	display: block !important;
+}
+
+ul#service li:before {
+  content: "\e080";
+  font-family: 'Glyphicons Halflings';
+  font-size: 9px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  color: #FFA500;
+}
+/*end of services.html*/
+
+/* hi.php */
+.form-control {
+	width: 80%;
+}
+
+.btn-primary {
+	background: black;
+}
+
+.btn-primary: hover {
+	background: #FFA500;
+}
+
+#map-outer {
+	height: 70%;
+	padding: 10px;
+	border: 2px solid #CCC;
+	background-color:#FFF;
+}
+
+#map-container {
+		height: 420px;
+}
+
+@media (max-width: 1080px) and (min-width: 0px) {
+  body {
+  	background: none;
 	}
-}
 
-@media (max-width: 641px){
-.footer {
-	opacity: 0.95;
-	text-align: center;
+	.footer{
+		opacity: 0.8;
 	}
-}
-
-@media (max-width: 961px){
-ul{
-	text-align: center;
-}	
-}
-
-@media (max-width: 1025px){
-ul {
-	text-align: center;
-}	
 }

@@ -9,7 +9,7 @@ Download all files, change the sample content, add images to fit your case and u
 - Built-in Map
 
 
-## How to
+## How to make this template work for you
 
 ### index.html
 - Add meta data for SEO
